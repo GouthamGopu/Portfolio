@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Personal Info
+    </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/47356d7817.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo">
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Front-End Devloper</p>
+          <h1>Hi, I'm <span>Goutham</span><br>From India</h1>
+        </div>
+      </div>
+    </div>
+   <!--About Section-->
+  
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/goutham.jpg" class="user-pic">
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <!--a second-year BTech student majoring in Computer Science and Engineering,-->
+            <p>I'm deeply passionate about technology and its applications.Proficient in front-end technologies like HTML, CSS, and JavaScript, I'm committed to continuous growth and improvement. Eager to contribute my evolving technical skills to meaningful projects, I approach each opportunity with enthusiasm and dedication</p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Devlopment</span><br>Web App Devlopment</li>
+                <li><span>App Devlopment</span><br>Building Android/ios apps</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2023-current</span><br>Front-End Projects</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2026</span><br>Guru Nanak institutions</li>
+                <li><span>2022</span><br>Narayana junior college</li>
+                <li><span>2020</span><br>S.T.Thomas High School</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Services Section-->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-brands fa-html5"></i>
+            <h2>HTML</h2>
+            <p>our HTML expertise ensures seamless functionality and visually stunning results.Let us bring your vision to life, pixel by pixel, with precision and creativity </p>
+            <a href="https://en.wikipedia.org/wiki/HTML">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-css3-alt"></i>
+            <h2>CSS</h2>
+            <p> Our team crafts stylish designs that captivate audiences and improve user experience. From sleek layouts to dynamic animations, we bring your vision to life with sophistication."</p>
+            <a href="https://en.wikipedia.org/wiki/CSS">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-js"></i>
+            <h2>JavaScript</h2>
+            <p>Our experts create dynamic, interactive experiences that engage users and enhance functionality. Let us bring your vision to life with JavaScript wizardry.</p>
+            <a href="https://en.wikipedia.org/wiki/JavaScript">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Portfolio Section-->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png">
+            <div class="layer">
+              <h3>YouTube Clone</h3>
+              <p>Explore my YouTube clone project,crafted with HTML and CSS, bringing the essence of the world's favorite video-sharing platform to life.</p>
+              <a href="https://gouthamgopu.github.io/YoutubeClone/"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png">
+            <div class="layer">
+              <h3>Projects</h3>
+              <p>Explore my Projects,crafted with HTML CSS and JS, bringing the essence of Games to life.</p>
+              <a href="https://gouthamgopu.github.io/Rockpaperscissors/"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png">
+            <div class="layer">
+              <h3>Amazon Project</h3>
+              <p>Explore my Amazon project,crafted with HTML,CSS and JS, bringing the essence of the world's favorite Shopping platform to life.</p>
+              <a href="#"><i class="fa-brands fa-amazon"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/GouthamGopu/" class="btn">See More</a>
+      </div>
+    </div>
+    <!--Contact Section-->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i> gopugoutham3@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i> +91-9347364271</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/goutham-gopu/
+              "><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://www.instagram.com/goutham_dimpu"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://twitter.com/goutham_dimpu"><i class="fa-brands fa-square-twitter"></i></a>
+            </div>
+            <a href="" class="btn btn2">Download</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="text" name="Email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>copyright @ Goutham <i class="fa-solid fa-heart"></i>.</p>
+      </div>
+    </div>
+    <script src="index.js"></script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbyYL1iQJGy_zdrvI9NF3d8GqN1N-av6FVO3a50ZMSMoxxQgfGTNfMyRu1xbuZ7neUYU/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg= document.getElementById("msg")
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML="Message Sent Successfully!"
+            setTimeout(()=>{
+              msg.innerHTML=""
+            },5000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+  </body>
+ </html>
