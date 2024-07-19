@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>
-      Goutham's Portfolio
+      Personal Info
     </title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,8 +13,8 @@
   <body>
     <div id="header">
       <div class="container">
-        <nav>
-          <img src="images/logo.png" class="logo">
+        <nav class="menu-bar">
+          <img src="images/logo1.png" class="logo">
           <ul id="sidemenu">
             <li><a href="#header">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -26,8 +26,8 @@
           <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-          <p>Front-End Devloper</p>
-          <h1>Hi, I'm <span>Goutham</span><br>From India</h1>
+          <p>Full Stack Devloper</p>
+          <h1>Hi, I'm <span>Goutham</span></h1>
         </div>
       </div>
     </div>
@@ -42,7 +42,7 @@
           <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
             <!--a second-year BTech student majoring in Computer Science and Engineering,-->
-            <p>I'm deeply passionate about technology and its applications.Proficient in front-end technologies like HTML, CSS, and JavaScript, I'm committed to continuous growth and improvement. Eager to contribute my evolving technical skills to meaningful projects, I approach each opportunity with enthusiasm and dedication</p>
+            <p>I'm deeply passionate about technology and its applications.Proficient in front-end technologies like HTML, CSS, JavaScript and MERN Stack technologies, I'm committed to continuous growth and improvement. Eager to contribute my evolving technical skills to meaningful projects, I approach each opportunity with enthusiasm and dedication</p>
             <div class="tab-titles">
               <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
               <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -51,12 +51,11 @@
             <div class="tab-contents active-tab" id="skills">
               <ul>
                 <li><span>Web Devlopment</span><br>Web App Devlopment</li>
-                <li><span>App Devlopment</span><br>Building Android/ios apps</li>
               </ul>
             </div>
             <div class="tab-contents" id="experience">
               <ul>
-                <li><span>2023-current</span><br>Front-End Projects</li>
+                <li><span>2023-current</span><br>Web Devlopment Projects</li>
               </ul>
             </div>
             <div class="tab-contents" id="education">
@@ -70,32 +69,38 @@
         </div>
       </div>
     </div>
-    <!--Services Section-->
-    <div id="services">
-      <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-          <div>
-            <i class="fa-brands fa-html5"></i>
-            <h2>HTML</h2>
-            <p>I ensure seamless functionality and visually stunning results.Let us bring your vision to life, pixel by pixel, with precision and creativity </p>
-            <a href="#">Learn More</a>
-          </div>
-          <div>
-            <i class="fa-brands fa-css3-alt"></i>
-            <h2>CSS</h2>
-            <p>I crafts stylish designs that captivate audiences and improve user experience. From sleek layouts to dynamic animations, we bring your vision to life with sophistication."</p>
-            <a href="#">Learn More</a>
-          </div>
-          <div>
-            <i class="fa-brands fa-js"></i>
-            <h2>JavaScript</h2>
-            <p>I create dynamic, interactive experiences that engage users and enhance functionality. Let us bring your vision to life with JavaScript wizardry.</p>
-            <a href="#">Learn More</a>
-          </div>
-        </div>
+   <!-- Services Section -->
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+      <!-- Block 1: HTML, CSS, JavaScript -->
+      <div>
+        <i class="fa-brands fa-html5"></i>
+        <i class="fa-brands fa-css3-alt"></i>
+        <i class="fa-brands fa-js"></i>
+        <h2>HTML, CSS & JavaScript</h2>
+        <p>I create seamless and visually stunning websites using HTML, CSS, and JavaScript. Let's bring your vision to life with precision and creativity.</p>
+        <a href="/">Learn More..</a>
+      </div>
+      <!-- Block 2: React, Next.js -->
+      <div>
+        <i class="fa-brands fa-react"></i>
+        <h2>React & Next.js</h2>
+        <p>I build modern web applications using React and Next.js, ensuring they are fast, scalable, and maintainable. Let's bring your vision to life with advanced web technologies.</p>
+        <a href="/">Learn More..</a>
+      </div>
+      <!-- Block 3: MongoDB, Mongoose -->
+      <div>
+        <i class="fa-solid fa-database"></i>
+        <h2>MongoDB & Mongoose</h2>
+        <p>I design efficient and robust database solutions using MongoDB and Mongoose. Let's bring your vision to life with powerful data management.</p>
+        <a href="/">Learn More..</a>
       </div>
     </div>
+  </div>
+</div>
+
     <!--Portfolio Section-->
     <div id="portfolio">
       <div class="container">
@@ -104,17 +109,17 @@
           <div class="work">
             <img src="images/work-1.png">
             <div class="layer">
-              <h3>YouTube Clone</h3>
-              <p>Explore my YouTube clone project,crafted with HTML and CSS, bringing the essence of the world's favorite video-sharing platform to life.</p>
-              <a href="https://gouthamgopu.github.io/Youtube/"><i class="fa-brands fa-youtube"></i></a>
+              <h3>Spotify Clone</h3>
+              <p>Explore my Spotify clone project,crafted with HTML and CSS, bringing the essence of the world's favorite Music Listening platform to life.</p>
+              <a href="https://gouthamgopu.github.io/Spotify/" target="_blank"><i class="fa-brands fa-spotify"></i></a>
             </div>
-          </div>
+          </div> 
           <div class="work">
             <img src="images/work-2.png">
             <div class="layer">
-              <h3>X Clone</h3>
-              <p>Explore my Twitter/X Clone Project,crafted with HTML and TailwindCSS, bringing the essence of world's favorite Social Media.</p>
-              <a href="https://gouthamgopu.github.io/X/"><i class="fa-solid fa-link"></i></a>
+              <h3>Netflix UI Project</h3>
+              <p>Check out my Netflix Clone project, created with HTML and Tailwind CSS. It captures the essence of streaming platforms, providing a sleek and engaging user experience.</p>
+              <a href="https://gouthamgopu.github.io/Netflix/" target="_blank"><i class="fa-solid fa-link"></i></a>
             </div>
           </div>
           <div class="work">
@@ -126,7 +131,7 @@
             </div>
           </div>
         </div>
-        <a href="https://github.com/GouthamGopu/" class="btn">See More</a>
+        <a href="https://github.com/GouthamGopu/" class="btn" target="_blank">See More</a>
       </div>
     </div>
     <!--Contact Section-->
@@ -138,12 +143,13 @@
             <p><i class="fa-solid fa-paper-plane"></i> gopugoutham3@gmail.com</p>
             <p><i class="fa-solid fa-square-phone"></i> +91-9347364271</p>
             <div class="social-icons">
-              <a href="https://www.linkedin.com/in/goutham-gopu/
-              "><i class="fa-brands fa-linkedin"></i></a>
-              <a href="https://www.instagram.com/goutham_dimpu"><i class="fa-brands fa-instagram"></i></a>
-              <a href="https://twitter.com/goutham_dimpu"><i class="fa-brands fa-square-twitter"></i></a>
+              <a href="https://www.linkedin.com/in/goutham-gopu/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://www.instagram.com/goutham_dimpu" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://twitter.com/goutham_dimpu" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="https://wa.me/9347364271?text=Hello%20there!" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+
             </div>
-            <a href="images/Resume.pdf" download class="btn btn2">Download Resume</a>
+            <a href="images/Resume.pdf" download class="btn btn2">Download</a>
           </div>
           <div class="contact-right">
             <form name="submit-to-google-sheet">
@@ -162,22 +168,37 @@
     </div>
     <script src="index.js"></script>
     <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbyYL1iQJGy_zdrvI9NF3d8GqN1N-av6FVO3a50ZMSMoxxQgfGTNfMyRu1xbuZ7neUYU/exec'
-      const form = document.forms['submit-to-google-sheet']
-      const msg= document.getElementById("msg")
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbyYL1iQJGy_zdrvI9NF3d8GqN1N-av6FVO3a50ZMSMoxxQgfGTNfMyRu1xbuZ7neUYU/exec';
+      const form = document.forms['submit-to-google-sheet'];
+      const msg = document.getElementById("msg");
+      const submitButton = form.querySelector('button[type="submit"]');
     
       form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        e.preventDefault();
+    
+        // Disable the submit button
+        submitButton.disabled = true;
+        submitButton.textContent = 'Submitting...';
+    
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
           .then(response => {
-            msg.innerHTML="Message Sent Successfully!"
-            setTimeout(()=>{
-              msg.innerHTML=""
-            },5000)
-            form.reset()
+            msg.innerHTML = "Message Sent Successfully!";
+            setTimeout(() => {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
           })
-          .catch(error => console.error('Error!', error.message))
-      })
+          .catch(error => {
+            console.error('Error!', error.message);
+            msg.innerHTML = "Failed to send message. Please try again.";
+          })
+          .finally(() => {
+            // Re-enable the submit button
+            submitButton.disabled = false;
+            submitButton.textContent = 'Submit';
+          });
+      });
     </script>
+    
   </body>
  </html>
