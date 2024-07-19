@@ -385,7 +385,6 @@ form .btn2 {
   padding: 14px 60px;
   font-size: 18px;
   cursor: pointer;
-
 }
 
 .copyright {
@@ -407,6 +406,9 @@ nav .fa-solid {
 }
 
 @media only screen and (max-width:1000px) {
+  .btn{
+    background-color: #ff004f;
+  }
   .header-text {
     margin-top: 480px;
     margin-bottom: 0;
@@ -447,6 +449,9 @@ nav .fa-solid {
 }
 
 @media only screen and (max-width:600px) {
+  .btn{
+    background-color: #ff004f;
+  }
   #header {
     background-image: url(images/phone-goutham.jpg);
   }
