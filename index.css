@@ -8,7 +8,9 @@
 html {
   scroll-behavior: smooth;
 }
-
+h1{
+  cursor: default;
+}
 body {
   background-color: black;
   color: white;
@@ -187,12 +189,13 @@ nav ul li a:hover::after {
 }
 
 .services-list div i {
-  font-size: 50px;
+  font-size: 40px;
   margin-bottom: 30px;
+  margin-right: 20px;
 }
 
 .services-list div h2 {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 500;
   margin-bottom: 15px;
 }
@@ -225,7 +228,7 @@ nav ul li a:hover::after {
 .work {
   border-radius: 10px;
   position: relative;
-  overflow: hidden;
+  overflow: hidden; /* Ensure content stays within bounds */
 }
 
 .work img {
@@ -233,25 +236,27 @@ nav ul li a:hover::after {
   border-radius: 10px;
   display: block;
   transition: transform 0.5s;
+  position: relative; /* Ensure overlay is positioned relative to the image */
 }
 
 .layer {
   width: 100%;
-  height: 0;
+  height: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
   border-radius: 10px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  overflow: hidden;
+  position: absolute; /* Position overlay within the image */
+  top: 0; /* Align with the top of the image */
+  left: 0; /* Align with the left of the image */
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0 40px;
+  padding: 20px; /* Adjust padding as needed */
   text-align: center;
   font-size: 14px;
-  transition: height 0.5s;
+  transition: opacity 0.5s;
+  opacity: 0; /* Hide by default */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 .layer h3 {
@@ -277,7 +282,22 @@ nav ul li a:hover::after {
 }
 
 .work:hover .layer {
-  height: 100%;
+  opacity: 1; /* Show overlay on hover */
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .layer {
+    opacity: 1; /* Show layer by default on mobile */
+    position: absolute; /* Ensure layer stays within the image */
+    top: 0; /* Align with the top of the image */
+    left: 0; /* Align with the left of the image */
+    height: 100%; /* Make sure layer covers the entire image */
+  }
+
+  .work:hover img {
+    transform: none; /* Remove scale effect on mobile */
+  }
 }
 
 .btn {
@@ -311,9 +331,11 @@ nav ul li a:hover::after {
 
 .contact-left p {
   margin-top: 30px;
+  cursor: pointer;
 }
 
 .contact-left p i {
+  cursor: pointer;
   color: #ff004f;
   margin-right: 15px;
   font-size: 25px;
