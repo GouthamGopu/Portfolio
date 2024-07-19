@@ -33,7 +33,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 6px 20px;
+  padding: 0px 20px;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -375,7 +375,7 @@ form textarea {
   outline: none;
   background: #262626;
   padding: 15px;
-  margin: 15px;
+  margin-top: 15px;
   color: white;
   font-size: 18px;
   border-radius: 6px;
@@ -384,7 +384,6 @@ form textarea {
 form .btn2 {
   padding: 14px 60px;
   font-size: 18px;
-  margin: 20px 12px;
   cursor: pointer;
 
 }
@@ -515,6 +514,7 @@ nav .fa-solid {
   .contact-left,
   .contact-right {
     flex-basis: 100%;
+    align-items: center;
   }
 }
 
