@@ -44,24 +44,32 @@
             <!--a second-year BTech student majoring in Computer Science and Engineering,-->
             <p>I'm deeply passionate about technology and its applications.Proficient in front-end technologies and MERN Stack technologies, I'm committed to continuous growth and improvement.I eagerly contribute my skills to meaningful projects with enthusiasm and dedication.</p>
             <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+              <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('skills')">skills</p>
               <p class="tab-links" onclick="opentab('experience')">Experience</p>
-              <p class="tab-links" onclick="opentab('education')">Education</p>
             </div>
-            <div class="tab-contents active-tab" id="skills">
+            <div class="tab-contents" id="skills">
               <ul>
-                <li><span>Web Devlopment</span><br>Web App Devlopment</li>
+                <li><span>Frontend Development</span><br>HTML, CSS, JavaScript, React.js, Redux , Next.js, Tailwind CSS, Bootstrap</li>
+                <li><span>Backend Development</span><br>Node.js, Express.js, MongoDB, Mongoose, MySQL</li>
+                <!-- <li><span>Full Stack Development</span><br>MERN Stack, API Development, Authentication (JWT, NextAuth)</li> -->
+                <li><span>AI & Machine Learning</span><br>Python, NumPy, Pandas, OpenAI API, TensorFlow (Basic)</li>
+                <li><span>Tools & Technologies</span><br>Git, Visual Studio Code, Eclipse, Microsoft SQL Server</li>
               </ul>
             </div>
+            
             <div class="tab-contents" id="experience">
               <ul>
-                <li><span>2023-current</span><br>Web Devlopment Projects</li>
+                <li><span>2023 - Present</span><br>Developed multiple web applications using MERN stack, React, Node.js, and MongoDB</li>
+                <li><span>Internships & Freelance</span><br>Worked on real-world projects, collaborating with teams to build scalable solutions</li>
+                <li><span>Personal Projects</span><br>Created and deployed full-stack applications, focusing on performance and user experience</li>
               </ul>
             </div>
-            <div class="tab-contents" id="education">
+            
+            <div class="tab-contents active-tab" id="education">
               <ul>
-                <li><span>2026</span><br>Guru Nanak institutions</li>
-                <li><span>2022</span><br>Narayana junior college</li>
+                <li><span>2026</span><br>Guru Nanak Institutions Technical Campus</li>
+                <!-- <li><span>2022</span><br>Narayana junior college</li> -->
                 <li><span>2020</span><br>S.T.Thomas High School</li>
               </ul>
             </div>
@@ -79,21 +87,18 @@
         <i class="fa-brands fa-react"></i>
         <h2>React & Next.js</h2>
         <p>I build modern web applications using React and Next.js, ensuring they are fast, scalable, and maintainable. Let's bring your vision to life with advanced web technologies.</p>
-        <a href="/">Learn More..</a>
       </div>
       <!-- Block 2: Node.js & Express -->
       <div>
         <i class="fa-brands fa-node"></i>
         <h2>Node.js & Express</h2>
         <p>I develop robust and scalable server-side applications using Node.js and Express. Let's bring your vision to life with efficient backend solutions that ensure seamless performance.</p>
-        <a href="/">Learn More..</a>
       </div>
       <!-- Block 3: MongoDB, Mongoose -->
       <div>
         <i class="fa-solid fa-database"></i>
         <h2>MongoDB & Mongoose</h2>
         <p>I design efficient and robust database solutions using MongoDB and Mongoose. Let's bring your vision to life with powerful data management.</p>
-        <a href="/">Learn More..</a>
       </div>
     </div>
   </div>
@@ -108,31 +113,32 @@
           <div class="work">
             <img src="images/work-1.png">
             <div class="layer">
-              <h3>Spotify Clone</h3>
-              <p>Explore my Spotify clone project,crafted with HTML and CSS, bringing the essence of the world's favorite Music Listening platform to life.</p>
-              <a href="https://gouthamgopu.github.io/Spotify/" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+              <h3>CoSolve</h3>
+              <p>A hackathon project connecting individuals with similar challenges for collaboration and problem-solving.</p>
+              <a href="https://cosolve-frontend.onrender.com/" ><i class="fa fa-link" aria-hidden="true"></i></a>
             </div>
           </div> 
           <div class="work">
             <img src="images/work-2.png">
             <div class="layer">
-              <h3>X UI Project</h3>
-              <p>Check out my X(Twitter) Clone project, created with HTML and Tailwind CSS. It captures the essence of Social Media platforms, providing a sleek and engaging user experience.</p>
-              <a href="https://gouthamgopu.github.io/X/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+              <h3>InstaVibe</h3>
+              <p>A social media platform with authentication, profiles, real-time chat, and interactive features using Socket.io and Redux.</p>
+              <a href="https://instavibe-ic2m.onrender.com/login" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a>
             </div>
           </div>
           <div class="work">
             <img src="images/work-3.png">
             <div class="layer">
-              <h3>Amazon Project</h3>
-              <p>Explore my Amazon project,crafted with HTML,CSS and JS, bringing the essence of the world's favorite Shopping platform to life.</p>
-              <a href="#"><i class="fa-brands fa-amazon"></i></a>
+              <h3>Jarvis</h3>
+              <p>A personal voice assistant for playing music and performing various tasks through voice commands.</p>
+              <a href="https://github.com/GouthamGopu/Jarvis" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a>
             </div>
           </div>
         </div>
         <a href="https://github.com/GouthamGopu/" class="btn" target="_blank">See More</a>
       </div>
     </div>
+    
     <!--Contact Section-->
     <div id="contact">
       <div class="container">
@@ -143,7 +149,7 @@
             <p><i class="fa-solid fa-square-phone"></i> +91-9347364271</p>
             <div class="social-icons">
               <a href="https://www.linkedin.com/in/goutham-gopu/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-              <a href="https://www.instagram.com/goutham_dimpu" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              <!-- <a href="https://www.instagram.com/goutham_dimpu" target="_blank"><i class="fa-brands fa-instagram"></i></a> -->
               <a href="https://x.com/goutham_dimpu" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
               <a href="https://wa.me/9347364271?text=Hello%20there!" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
 
